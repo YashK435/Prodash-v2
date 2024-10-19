@@ -144,7 +144,7 @@ select {
   box-sizing: border-box;
 }
 
-.Description button {
+.container button {
   background-color: #4caf50;
   color: white;
   padding: 10px 15px;
@@ -153,33 +153,39 @@ select {
   cursor: pointer;
 }
 
-.Description button:hover {
+.container button:hover {
   background-color: #45a049;
 }
 
-.edit-btn,
+.transactions .edit-btn,
 .delete-btn {
   padding: 5px 10px;
   margin: 0 2px;
   font-size: 0.8em;
 }
 
-.edit-btn {
+.transactions .edit-btn {
   background-color: #2196f3;
+  height: 4vh;
+  width: 8vw;
 }
 
-.edit-btn:hover {
+.transactions .edit-btn:hover {
   background-color: #0b7dda;
 }
 
-.delete-btn {
+.transactions  .delete-btn {
   background-color: #f44336;
+  height: 4vh;
+  width: 8vw;
 }
 
-.delete-btn:hover {
+.transactions  .delete-btn:hover {
   background-color: #da190b;
 }
-
+.transactions {
+  width: 100%;
+}
 @media (max-width: 768px) {
   .transactions,
   .add-transaction,

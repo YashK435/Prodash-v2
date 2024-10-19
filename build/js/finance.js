@@ -46,7 +46,7 @@ function updateTable() {
     row.insertCell(0).textContent = transaction.date;
     row.insertCell(1).textContent = transaction.description;
     row.insertCell(2).textContent = transaction.type;
-    row.insertCell(3).textContent = `$${transaction.amount.toFixed(2)}`;
+    row.insertCell(3).textContent = `₹ ${transaction.amount.toFixed(2)}`;
 
     const actionsCell = row.insertCell(4);
     const editBtn = document.createElement("button");
