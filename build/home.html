@@ -23,26 +23,33 @@
         }
     </style>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
+    <nav class="navbar">
+        <button class="logo"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Prodash</button>
+        <ul class="navbar-button-div">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-angle-double-down" aria-hidden="true"></i>  Products </button>
+                <div class="dropdown-content">
+                  <a href="#" onclick="visit_drawing()"><i class="fa fa-paint-brush" aria-hidden="true" ></i> Drawing-board</a>
+                  <a href="#" onclick="visit_notes()"><i class="fa fa-book" aria-hidden="true"></i>  Notes</a>
+                  <a href="#" onclick="visit_todo()"><i class="fa fa-thumb-tack" aria-hidden="true"></i> To-Do List</a>
+                  <a href="#" onclick="visit_weather()"><i class="fa fa-cloud" aria-hidden="true"></i> Weather-Updates</a>
+                  <a href="#" onclick="visit_finance()"><i class="fa fa-credit-card" aria-hidden="true"></i> Finance Tracker</a>
+                  <a href="#" onclick="visit_habit()"><i class="fa fa-bullseye" aria-hidden="true"></i> Habit Tracker</a>
+                </div>
+              </div>
+            <li><button class="navbar-btn" onclick="visit_git()"> <i class="fa fa-github" aria-hidden="true"></i> Github</button></li>
+            <li><button class="navbar-btn" onclick="visit_subs()">Subscribe</button></li>
+            <li><button class="navbar-btn">Users</button></li>
+            
+        </ul>
+    </nav>
     <div class="headerPage" style="background-image: url('./img/home-bg.jpg');">
 
-        <div class="nav" >
-            <header>
-                <div class="heading-container">
-                    <img src="./img/prodash-logo.png" width="80vw" height="80vh" />
-                    <h1><a href="#">Prodash</a></h1>
-                </div>
-                <div class="hbtn-div">
-                    <button class="navbar-btn" onclick="visit6()">Subscribe</button>
-                    <button class="navbar-btn" onclick="visit1()">GitHub</button>
-                    <button class="navbar-btn" >User</button>
-                    
-                </div>
-            </header>
-        </div>
     </div>
 
 
@@ -53,7 +60,7 @@
             <div class="box-txt"> - Express your creativity with a versatile drawing canvas. Sketch, doodle, or
                 brainstorm ideas freely! Customize brushes and colors for a personal touch.</div>
             <div class="box-btn-div">
-                <button class="box-btn" onclick="visit2()">Vision Board</button>
+                <button class="box-btn" onclick="visit_drawing()">Vision Board</button>
             </div>
         </div>
 
@@ -66,7 +73,7 @@
             <div class="box-txt"> - Capture your thoughts effortlessly. Organize notes, create checklists, and stay on
                 top of your ideas! Sync across devices for easy access anywhere.</div>
             <div class="box-btn-div">
-                <button class="box-btn" onclick="visit3()">Create notes</button>
+                <button class="box-btn" onclick="visit_notes()">Create notes</button>
             </div>
         </div>
 
@@ -77,7 +84,7 @@
             <div class="box-txt"> - Stay informed with real-time weather updates tailored to your location. Plan your
                 day with confidence! Get alerts for severe weather and save your favorite locations.</div>
             <div class="box-btn-div">
-                <button class="box-btn" onclick="visit4()">Weather-Updates</button>
+                <button class="box-btn" onclick="visit_weather()">Weather-Updates</button>
             </div>
         </div>
         <div class="box-img3"></div>
@@ -89,9 +96,31 @@
             <div class="box-txt"> - Manage tasks with ease. Prioritize, schedule, and check off your daily goals to stay
                 productive! Set reminders and deadlines to keep you on track.</div>
             <div class="box-btn-div">
-                <button class="box-btn" onclick="visit5()">To-Do List</button>
+                <button class="box-btn" onclick="visit_todo()">To-Do List</button>
             </div>
         </div>
+
+    </div>
+    <div class="box">
+        <div class="box-img5"></div>
+        <div class="btxt">
+            <div class="box-htxt">Finance Tracker</div>
+            <div class="box-txt">- Track your expenses effortlessly. Monitor spending, set budgets, and stay in control of your finances. Get insights and reminders to help you achieve your financial goals!</div>
+            <div class="box-btn-div">
+                <button class="box-btn" onclick="visit_finance()">Finance Tracker</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="btxt">
+            <div class="box-htxt">Habit Tracker</div>
+            <div class="box-txt"> - Build habits with ease. Track your progress, set goals, and stay motivated to achieve lasting change. Get reminders and insights to stay consistent on your journey!</div>
+            <div class="box-btn-div">
+                <button class="box-btn" onclick="visit_habit()">Habit Tracker</button>
+            </div>
+        </div>
+        <div class="box-img6"></div>
 
     </div>
     <div class="box">
@@ -126,7 +155,7 @@
         <div class="footer1">
             <h2>GitHub Repository:</h2>
             <p>Explore our projects, track our progress, and contribute to our work through our <a
-                    href="https://github.com/SAKATA-GINTOKI2003/sem5-miniproj" target="_blank">GitHub Repository</a>..
+                    href="https://github.com/YashK435/Prodash-v2.git" target="_blank">GitHub Repository</a>..
                 We are committed to maintaining open-source code, fostering collaboration, and continuously improving
                 our application</p>
 
@@ -136,23 +165,32 @@
 
     <script src="js/home.js"></script>
     <script>
-        function visit1() {
-            window.open("https://github.com/SAKATA-GINTOKI2003/sem5-miniproj", "_self");
+              function visit_home() {
+          window.open("./home.html", "_self");
+      }
+        function visit_git() {
+            window.open("https://github.com/YashK435/Prodash-v2.git", "_self");
         }
-        function visit2() {
+        function visit_drawing() {
             window.open("./drawing-board.html", "_self");
         }
-        function visit3() {
+        function visit_notes() {
             window.open("./Notes.html", "_self");
         }
-        function visit4() {
+        function visit_weather() {
             window.open("./weather.html", "_self");
         }
-        function visit5() {
+        function visit_todo() {
             window.open("./todo.html", "_self");
         }
-        function visit6() {
+        function visit_subs() {
             window.open("./Subscription.html", "_self");
+        }
+        function visit_finance(){
+            window.open("./finance.html", "_self");
+        }
+        function visit_habit(){
+            window.open("./habit.html", "_self");
         }
     </script>
 </body>

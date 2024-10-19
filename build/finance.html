@@ -6,8 +6,29 @@
     <title>Personal Finance Tracker</title>
     <link rel="stylesheet" href="css/finance.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <nav class="navbar">
+      <button class="logo" onclick="visit_home()"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Prodash</button>
+      <ul class="navbar-button-div">
+          <div class="dropdown">
+              <button class="dropbtn"><i class="fa fa-angle-double-down" aria-hidden="true"></i>  Products </button>
+              <div class="dropdown-content">
+                <a href="#" onclick="visit_drawing()"><i class="fa fa-paint-brush" aria-hidden="true" ></i> Drawing-board</a>
+                <a href="#" onclick="visit_notes()"><i class="fa fa-book" aria-hidden="true"></i>  Notes</a>
+                <a href="#" onclick="visit_todo()"><i class="fa fa-thumb-tack" aria-hidden="true"></i> To-Do List</a>
+                <a href="#" onclick="visit_weather()"><i class="fa fa-cloud" aria-hidden="true"></i> Weather-Updates</a>
+                <a href="#" onclick="visit_finance()"><i class="fa fa-credit-card" aria-hidden="true"></i> Finance Tracker</a>
+                <a href="#" onclick="visit_habit()"><i class="fa fa-bullseye" aria-hidden="true"></i> Habit Tracker</a>
+              </div>
+            </div>
+          <li><button class="navbar-btn" onclick="visit_git()"> <i class="fa fa-github" aria-hidden="true"></i> Github</button></li>
+          <li><button class="navbar-btn" onclick="visit_subs()">Subscribe</button></li>
+          <li><button class="navbar-btn">Users</button></li>
+          
+      </ul>
+  </nav>
     <header>
       <h1>Personal Finance Tracker</h1>
       <p>Balance: $<span id="balance">0.00</span></p>
@@ -22,7 +43,7 @@
             <input type="date" id="date" required />
 
             <label for="type">Type:</label>
-            <select id="type" required>
+            <select id="type" required class="Description">
               <option value="income">Income</option>
               <option value="expense">Expense</option>
               <option value="savings">Savings</option>
@@ -58,5 +79,34 @@
       </div>
     </div>
     <script src="js/finance.js"></script>
+    <script>
+            function visit_home() {
+          window.open("./home.html", "_self");
+      }
+      function visit_git() {
+          window.open("https://github.com/SAKATA-GINTOKI2003/sem5-miniproj", "_self");
+      }
+      function visit_drawing() {
+          window.open("./drawing-board.html", "_self");
+      }
+      function visit_notes() {
+          window.open("./Notes.html", "_self");
+      }
+      function visit_weather() {
+          window.open("./weather.html", "_self");
+      }
+      function visit_todo() {
+          window.open("./todo.html", "_self");
+      }
+      function visit_subs() {
+          window.open("./Subscription.html", "_self");
+      }
+      function visit_finance(){
+          window.open("./finance.html", "_self");
+      }
+      function visit_habit(){
+          window.open("./habit.html", "_self");
+      }
+  </script>
   </body>
 </html>

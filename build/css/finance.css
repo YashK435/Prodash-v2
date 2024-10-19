@@ -1,11 +1,93 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  width: 100%;
+  min-height: 1vh;
+  background: none;
+  background-color: #3d3d3d;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-btn,
+.dropbtn,
+.logo {
+  height: 4vh;
+  width: 8vw;
+  color: #f2f2f2;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+  background: none;
+  cursor: pointer;
+  border-left: solid #e1e1e1;
+}
+
+.navbar-btn:hover,
+.dropbtn:hover {
+  color: #bababa;
+}
+
+.logo {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 36px;
+  border: none;
+  outline: none;
+  width: auto;
+  padding-bottom: 7vh;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+.navbar-button-div {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
 
 .container {
@@ -16,7 +98,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color:#3d3d3d;
   color: white;
   padding: 20px;
   text-align: center;
@@ -62,7 +144,7 @@ select {
   box-sizing: border-box;
 }
 
-button {
+.Description button {
   background-color: #4caf50;
   color: white;
   padding: 10px 15px;
@@ -71,7 +153,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.Description button:hover {
   background-color: #45a049;
 }
 
