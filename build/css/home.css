@@ -215,6 +215,17 @@ body {
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent repeating */
 }
+.box-img7{
+  background-color: red;
+  height: 400px;
+  width:40%;
+  border-radius: 10px;
+
+  background-image: url('./homeImg/home-coming_soon.jpg'); /* Path to your image */
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
 .box:nth-of-type(even) {
     transform: translateX(-400%);
 }

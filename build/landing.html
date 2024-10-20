@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDash-Homepage</title>
+    <style>
+        .headerPage {
+            background-image: url('./img/home-bg.jpg');
+            /* Path to your image */
+            background-size: cover;
+            /* Cover the entire div */
+            background-position: center;
+            /* Center the background image */
+            background-repeat: no-repeat;
+            /* Prevent repeating */
+            height: 500px;
+            /* Adjust height of the div */
+            width: 100%;
+            /* Ensure div takes up the full width */
+
+        }
+    </style>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="headerPage" style="background-image: url('./img/background.jpg');">
+        <nav class="navbar">
+            <button class="logo"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Prodash</button>
+            <ul class="navbar-button-div">
+                <li><button class="navbar-btn" onclick="visit_git()"> <i class="fa fa-github" aria-hidden="true"></i> Github</button></li>
+                <li><button class="navbar-btn" onclick="visit_login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button></li>
+                <li><button class="navbar-btn" onclick="visit_signup()"><i class="fa fa-sign-in" aria-hidden="true"></i> Signup</button></li>
+                
+            </ul>
+        </nav>
+        <div class="container_info">
+            <h1 class="container_header"> Your All-in-One Hub for Productivity Mastery</h1>
+            <p class="container_paragraph">
+                Take control of your day with a fully customizable dashboard that seamlessly integrates your favorite productivity tools. Stay on top of your tasks, track your goals, and simplify your workflow—all in one place.
+            </p>
+            <div class="create_container">
+                <p class="console-txt">Create Your Own :</p>
+                <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+            </div>
+            <button class="btn1" onclick="visit_signup()"><i class="fa fa-rocket" aria-hidden="true"></i> Get Ready</button>
+        </div>
+    </div>
+    <script src="js/landing.js"></script>
+    <script>
+              function visit_login() {
+          window.open("./login.html", "_self");
+      }
+        function visit_git() {
+            window.open("https://github.com/YashK435/Prodash-v2.git", "_self");
+        }
+        function visit_signup() {
+            window.open("./signup.html", "_self");
+        }
+
+    </script>
+</body>
+
+</html>

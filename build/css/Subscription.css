@@ -4,14 +4,17 @@
   padding: 0;
   font-family: 'Comic Sans MS', cursive, sans-serif;
 }
-navbar {
+body {
+  background-color: #f0f5ff;
+  color: #333;
+}
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1px;
   width: 100%;
   min-height: 1vh;
-  background: rgb(58, 63, 63);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -48,10 +51,7 @@ navbar {
 }
 
 
-body {
-  background-color: #f0f5ff;
-  color: #333;
-}
+
 
 .subscription-container {
   max-width: 800px;
