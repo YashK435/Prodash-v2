@@ -28,27 +28,27 @@
 
 <body>
 
-    <div class="headerPage" style="background-image: url('./img/background.jpg');">
-        <nav class="navbar">
-            <button class="logo"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Prodash</button>
-            <ul class="navbar-button-div">
-                <li><button class="navbar-btn" onclick="visit_git()"> <i class="fa fa-github" aria-hidden="true"></i> Github</button></li>
-                <li><button class="navbar-btn" onclick="visit_login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button></li>
-                <li><button class="navbar-btn" onclick="visit_signup()"><i class="fa fa-sign-in" aria-hidden="true"></i> Signup</button></li>
-                
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <button class="logo"><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Prodash</button>
+        <ul class="navbar-button-div">
+            <li><button class="navbar-btn" onclick="visit_git()"> <i class="fa fa-github" aria-hidden="true"></i> Github</button></li>
+            <li><button class="navbar-btn" onclick="visit_login()"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</button></li>
+            <li><button class="navbar-btn" onclick="visit_signup()"><i class="fa fa-sign-in" aria-hidden="true"></i> Signup</button></li>
+            
+        </ul>
+    </nav>
+    <div class="body_container">
+        <div class="img_box" ></div>
         <div class="container_info">
             <h1 class="container_header"> Your All-in-One Hub for Productivity Mastery</h1>
-            <p class="container_paragraph">
-                Take control of your day with a fully customizable dashboard that seamlessly integrates your favorite productivity tools. Stay on top of your tasks, track your goals, and simplify your workflow—all in one place.
-            </p>
+            <p class="container_paragraph">- ProDash integrates all your essential productivity tools into one seamless experience. From task management to goal tracking, weather updates, and finance monitoring, ProDash keeps you on top of everything that matters.<br> - Whether you're planning your day or managing long-term projects, ProDash adapts to your needs with easy-to-use widgets and personalized features</p>
             <div class="create_container">
                 <p class="console-txt">Create Your Own :</p>
                 <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
             </div>
             <button class="btn1" onclick="visit_signup()"><i class="fa fa-rocket" aria-hidden="true"></i> Get Ready</button>
         </div>
+    </div>
     </div>
     <script src="js/landing.js"></script>
     <script>

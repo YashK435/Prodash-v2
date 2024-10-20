@@ -1,6 +1,6 @@
 
 // function([string1, string2],target id,[color1,color2])    
- consoleText(['Vision Board.', 'Notes App.','To-Do List.', 'Weather App.','Goal Tracker.','Finance Tracker.',], 'text',['rgb(246, 240, 126)']);
+ consoleText(['Vision Board.', 'Notes App.','To-Do List.', 'Weather App.','Goal Tracker.','Finance Tracker.',], 'text',['#b6d9d5']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
