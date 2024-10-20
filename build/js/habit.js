@@ -156,3 +156,30 @@ yearSelect.addEventListener('change', updateCalendar);
 
 // Initial calendar setup
 updateCalendar();
+function visit_home() {
+    window.open("./home.html", "_self");
+}
+function visit_git() {
+    window.open("https://github.com/YashK435/Prodash-v2.git", "_self");
+}
+function visit_drawing() {
+    window.open("./drawing-board.html", "_self");
+}
+function visit_notes() {
+    window.open("./Notes.html", "_self");
+}
+function visit_weather() {
+    window.open("./weather.html", "_self");
+}
+function visit_todo() {
+    window.open("./todo.html", "_self");
+}
+function visit_subs() {
+    window.open("./Subscription.html", "_self");
+}
+function visit_finance() {
+    window.open("./finance.html", "_self");
+}
+function visit_habit() {
+    window.open("./habit.html", "_self");
+}

@@ -175,3 +175,43 @@ window.addEventListener("load", () => {
     setCanvasBackground(); // Set the initial background
     saveCanvasState(); // Save the initial blank state
 });
+function visit_home() {
+    window.open("./home.html", "_self");
+}
+function visit_git() {
+    window.open("https://github.com/YashK435/Prodash-v2.git", "_self");
+}
+function visit_drawing() {
+    window.open("./drawing-board.html", "_self");
+}
+function visit_notes() {
+    window.open("./Notes.html", "_self");
+}
+function visit_weather() {
+    window.open("./weather.html", "_self");
+}
+function visit_todo() {
+    window.open("./todo.html", "_self");
+}
+function visit_subs() {
+    window.open("./Subscription.html", "_self");
+}
+function subscribed() {
+    const checkTrue = sessionStorage.getItem("subscription");
+    console.log(sessionStorage.getItem("subscription"))
+    return checkTrue === "true";
+}
+function visit_finance() {
+    if (subscribed()) {
+        window.location.href = "finance.html";
+    } else {
+        window.location.href = "Subscription.html";
+    }
+}
+function visit_habit() {
+    if (subscribed()) {
+        window.location.href = "habit.html";
+    } else {
+        window.location.href = "Subscription.html";
+    }
+}

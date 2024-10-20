@@ -37,4 +37,9 @@ const monthlyPrices = {
     monthlyBtn.classList.remove('active');
     updatePrices(annualPrices);
   });
+  function visit_home() {
+    sessionStorage.setItem("subscription","true")
+    const subscriptionState=sessionStorage.getItem("subscription")
+    window.open("./home.html", "_self");
+  }
   
